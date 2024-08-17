@@ -1,3 +1,6 @@
+package main.java;
+
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -8,6 +11,10 @@ public class DrawingPanel extends JPanel {
     private boolean isDrawing = false;
     private final ArrayList<Line> lines = new ArrayList<>();
     private Color currentColor = Color.WHITE;
+
+    public ArrayList<Line> getLines(){
+        return this.lines;
+    }
 
     public DrawingPanel(){
         setBackground(Color.BLACK);
