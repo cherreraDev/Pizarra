@@ -64,8 +64,8 @@ public class DrawingPanel extends JPanel {
         g.setColor(Color.BLACK);
         g.fillRect(0, 0, getWidth(), getHeight());
         for (Line line : lines) {
-            g.setColor(line.getColor());
-            g.drawLine(line.getX1(), line.getY1(), line.getX2(), line.getY2());
+            g.setColor(line.color());
+            g.drawLine(line.x1(), line.y1(), line.x2(), line.y2());
         }
     }
 
